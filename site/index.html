@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Compass &amp; Trail — Kevin Baynham Photography</title>
+  <meta name="description" content="Compass & Trail — scenes from adventures. Hiking, wildlife and travel photography by Kevin Baynham." />
+  <meta name="theme-color" content="#11120e" />
+  <meta property="og:title" content="Compass & Trail — Kevin Baynham" />
+  <meta property="og:description" content="Scenes from adventures." />
+  <meta property="og:image" content="img/tchagra-trails-greater-kruger-national-park/011-l.webp" />
+  <link rel="icon" href="img/icons/004.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="img/portfolio/012-l.webp" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#expeditions">Skip to work</a>
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader-compass" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" />
+      <g class="ticks"></g>
+      <path class="needle" d="M50 14 L56 50 L50 86 L44 50 Z" />
+    </svg>
+    <div class="loader-count"><span>0</span>%</div>
+    <div class="loader-word">Finding north</div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="Compass &amp; Trail — home">
+      <svg class="brand-rose" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" />
+        <path class="n" d="M20 3 L23 20 L20 37 L17 20 Z" />
+        <path d="M3 20 L20 17 L37 20 L20 23 Z" />
+      </svg>
+      <span>Compass <i>&amp;</i> Trail</span>
+    </a>
+    <div class="heading" aria-hidden="true"><span class="heading-deg">000°</span> <span class="heading-dir">N</span></div>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">
+      <span class="menu-btn-label">Menu</span>
+      <span class="menu-btn-lines"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <!-- Fly-out menu -->
+  <nav class="menu" id="menu" aria-hidden="true">
+    <div class="menu-topo"><svg></svg></div>
+    <div class="menu-inner">
+      <div class="menu-main">
+        <p class="menu-eyebrow">Expeditions</p>
+        <ol class="menu-projects"></ol>
+      </div>
+      <div class="menu-side">
+        <p class="menu-eyebrow">Wander</p>
+        <ul class="menu-sections">
+          <li><a href="#/" data-goto="top">Home</a></li>
+          <li><a href="#/" data-goto="gallery">Gallery</a></li>
+          <li><a href="#/" data-goto="basecamp">Links</a></li>
+        </ul>
+        <ul class="menu-social"></ul>
+      </div>
+    </div>
+    <img class="menu-preview" alt="" />
+  </nav>
+
+  <main id="main">
+    <svg class="trail" aria-hidden="true">
+      <defs><mask id="trail-mask"><path class="trail-reveal" pathLength="1" /></mask></defs>
+      <path class="trail-path" pathLength="1" mask="url(#trail-mask)" />
+      <g class="trail-walker"><circle r="12" class="pulse" /><circle r="4" /></g>
+    </svg>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-slides"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-topo"><svg></svg></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">Photographs by <span class="name"></span></p>
+        <h1 class="hero-title">
+          <span class="line"><span class="split">Compass</span></span>
+          <span class="line"><em class="amp">&amp;</em><span class="split">Trail</span></span>
+        </h1>
+        <p class="hero-tagline"></p>
+      </div>
+      <div class="hero-foot">
+        <div class="hero-slide-meta">
+          <div class="hero-ticks"></div>
+          <a class="hero-slide-label" href="#/"></a>
+        </div>
+        <button class="scroll-cue" data-goto="intro"><span>Scroll</span><i></i></button>
+      </div>
+    </section>
+
+    <!-- Intro statement -->
+    <section class="intro" id="intro">
+      <p class="intro-text" data-words>Scenes from adventures &mdash; on foot through lowveld bush, cloud forest and mountain kloof. Each set below is a trail, a trip, or a day worth remembering.</p>
+      <dl class="stats">
+        <div><dt>Photographs</dt><dd data-count="0">0</dd></div>
+        <div><dt>Stories</dt><dd data-count="0">0</dd></div>
+        <div><dt>Days on foot</dt><dd data-count="0">0</dd></div>
+      </dl>
+    </section>
+
+    <!-- Projects -->
+    <section class="expeditions" id="expeditions">
+      <header class="section-head">
+        <p class="eyebrow">( Chapter I )</p>
+        <h2 class="section-title"><span class="split">Expeditions</span></h2>
+        <p class="section-note">Open a story &mdash; each card fans out a few frames from the trip.</p>
+      </header>
+      <div class="cards"></div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-tilt">
+        <div class="marquee-row"><div class="marquee-track"></div></div>
+        <div class="marquee-row reverse"><div class="marquee-track"></div></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <header class="section-head">
+        <p class="eyebrow">( Chapter II )</p>
+        <h2 class="section-title"><span class="split">Gallery</span></h2>
+        <p class="section-note gallery-blurb"></p>
+        <div class="gallery-tools" role="group" aria-label="Gallery layout">
+          <button class="chip is-on" data-layout="masonry" aria-pressed="true">Masonry</button>
+          <button class="chip" data-layout="grid" aria-pressed="false">Contact sheet</button>
+          <button class="chip shuffle" data-shuffle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h3.5c2 0 3.2 1 4.3 2.7l2.4 4.6c1 1.7 2.3 2.7 4.3 2.7H21M18 14l3 3-3 3M3 17h3.5c1.4 0 2.4-.5 3.2-1.4M14.3 8.4C15 7.5 16 7 17.5 7H21M18 4l3 3-3 3"/></svg>Shuffle</button>
+        </div>
+      </header>
+      <div class="tiles masonry"></div>
+    </section>
+
+    <!-- Links -->
+    <section class="basecamp" id="basecamp">
+      <div class="basecamp-topo"><svg></svg></div>
+      <p class="eyebrow">( Base camp )</p>
+      <h2 class="basecamp-title"><span class="split">Follow</span> <em>the</em> <span class="split">trail</span></h2>
+      <ul class="social-links"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-marquee" aria-hidden="true"><div><span>Compass &amp; Trail</span><span>Compass &amp; Trail</span><span>Compass &amp; Trail</span><span>Compass &amp; Trail</span></div></div>
+    <div class="footer-row">
+      <p>&copy; <span class="year"></span> <span class="name"></span> · All rights reserved</p>
+      <button class="to-top" data-goto="top">Back to top <span aria-hidden="true">↑</span></button>
+    </div>
+  </footer>
+
+  <!-- Project fly-out panel -->
+  <div class="scrim" aria-hidden="true"></div>
+  <aside class="panel" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Project">
+    <div class="panel-bar">
+      <button class="panel-close" aria-label="Close project"><span></span><span></span></button>
+      <span class="panel-num"></span>
+      <span class="panel-name"></span>
+      <i class="panel-progress"></i>
+    </div>
+    <div class="panel-scroll"></div>
+  </aside>
+
+  <!-- Lightbox -->
+  <div class="lb" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo viewer">
+    <div class="lb-bg"></div>
+    <div class="lb-top">
+      <span class="lb-count"></span>
+      <span class="lb-title"></span>
+      <button class="lb-close" aria-label="Close viewer"><span></span><span></span></button>
+    </div>
+    <div class="lb-stage"><img class="lb-img" alt="" draggable="false" /></div>
+    <button class="lb-nav prev" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="lb-nav next" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    <p class="lb-cap"></p>
+    <div class="lb-thumbs"></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
