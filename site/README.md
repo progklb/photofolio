@@ -10,9 +10,17 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deploy
+## Deploy (GitHub Pages)
 
-Upload the contents of `site/` to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages or S3). The `tools/` folder doesn't need to be uploaded.
+`.github/workflows/pages.yml` publishes the site to <https://progklb.github.io/photofolio/> whenever a push to `main` changes something in `site/`. It publishes only `index.html`, `data.js`, `css/`, `js/` and `img/`. You can also start it by hand from the Actions tab.
+
+One-time setup: go to the repo's **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
+
+All paths in the site are relative, so it works under the `/photofolio/` subpath. If you add a custom domain later, update the `og:url` and `og:image` URLs in `index.html`.
+
+## Source images
+
+The full-size export in `../compassandtrail-portfolio/` is git-ignored, so keep it backed up somewhere else. The tools below need it, but the published site only uses the processed WebP files in `img/`, which are committed.
 
 ## Updating content
 

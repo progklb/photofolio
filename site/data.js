@@ -932,7 +932,7 @@ window.SITE = {
    "slug": "magalies-krans-trail",
    "title": "Magalies Krans Trail",
    "blurb": [
-    "On the Rustig farm just outside Hartbeespoort lies this 2 day overnight trail. I solo hiked this trail in the dry season, spending a the night in an old farm house that serves as a trail hut.",
+    "On the Rustig farm just outside Hartbeespoort lies this 2 day overnight trail. I solo hiked this trail in the dry season, spending the night in an old farm house that serves as a trail hut.",
     "The main purpose of the hike was to create a silent hiking video, which can be found on YouTube:"
    ],
    "video": "https://www.youtube.com/watch?v=Xx_ALB_qnk0",

@@ -1,0 +1,6 @@
+# Full-size source export (kept locally; only the processed WebP images in site/img are committed)
+compassandtrail-portfolio/
+
+# OS / tooling clutter
+.DS_Store
+node_modules/
